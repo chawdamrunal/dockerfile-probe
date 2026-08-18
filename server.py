@@ -8,4 +8,5 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(b'OK')
 
 if __name__ == '__main__':
-    HTTPServer(('0.0.0.0', 8080), Handler).start()
+    server = HTTPServer(('0.0.0.0', 8080), Handler)
+    server.serve_forever()
