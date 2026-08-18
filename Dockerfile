@@ -1,2 +1,4 @@
-FROM 169.254.169.254/metadata/v1:latest
-RUN echo "kaniko-ssrf-test" > /dev/null
+FROM python:3.11-slim
+RUN mkdir -p /app && echo '<html><body>submodule test</body></html>' > /app/index.html
+WORKDIR /app
+CMD ["python3", "-m", "http.server", "8080"]
